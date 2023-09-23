@@ -1,0 +1,510 @@
+$text-color: #181818;
+$orange: #F66E0D;
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+  //overflow-x: hidden;
+  //overflow-y: hidden;
+  scroll-behavior: smooth;
+  cursor: none;
+
+  a:hover {
+    cursor: none;
+  }
+}
+
+
+//-----------------------------------
+//-----------------------------------
+//HEADER
+//-----------------------------------
+//-----------------------------------
+
+.header {
+  margin-top: 50px;
+
+
+  li {
+    margin-right: 25px;
+    font-size: 20px;
+  }
+
+  li:last-child {
+    margin-right: 0;
+  }
+
+  a:hover {
+    border-bottom: 1px solid $text-color;
+  }
+
+  .headerCol {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logoBox > a {
+    text-align: center;
+    align-items: center;
+    color: $text-color;
+    text-decoration: none;
+    font-size: 32px;
+    border: none;
+  }
+  .logoBox>a>img{
+    margin-right: 16px;
+  }
+}
+
+//MAIN
+.main {
+  position: relative;
+  margin-top: 50px;
+
+  #headerTypingText {
+    font-family: "Montserrat";
+    display: inline-block;
+    font-weight: 500;
+    font-size: 48px;
+    margin-top: 125px;
+    //max-width: 500px;
+    width: 100%;
+    //transition: 2s;
+    //text-transform: uppercase;
+  }
+
+  .man {
+    //display: flex;
+    //justify-content: center;
+    //align-items: center;
+    overflow: hidden;
+    height: 700px;
+    position: relative;
+  }
+
+  img {
+    height: 700px;
+
+    position: absolute;
+    bottom: -1px;
+  }
+
+  .clickBtn {
+    display: inline;
+
+    a {
+      display: inline-block;
+    }
+  }
+}
+.nav1{
+  padding: 10px 20px;
+  border: #F66E0D solid 1px;
+  border-radius: 50%;
+}
+
+.btn {
+  color: white;
+  font-size: 32px;
+  padding: 15px 50px;
+  background-color: $orange;
+  animation: 2s 2.2s fadeIn;
+}
+
+.btn:hover {
+  border: 1px solid red;
+  background: $orange;
+}
+
+//-----------------------------------
+//-----------------------------------
+//ANIMATE CSS
+//-----------------------------------
+//-----------------------------------
+
+
+.animate__animated.animate__backInUp {
+  --animate-duration: 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+}
+@keyframes fadeOut{
+  0%{
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+//-----------------------------------
+//-----------------------------------
+//KEYBOARD
+//-----------------------------------
+//-----------------------------------
+.keyboardParagraph {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    text-align: center;
+    font-size: 72px;
+    font-weight: 600;
+    margin-bottom: 40px;
+  }
+
+  a {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    max-width: 500px;
+  }
+
+  a:hover {
+    //outline: 1px solud $text-color;
+    transition: 0.3s ease-out;
+  }
+}
+
+#keyboardSection {
+  padding: 300px 0;
+  background-color: $text-color;
+
+  h1 {
+    color: white;
+  }
+}
+
+.title {
+  color: mintcream;
+  text-transform: uppercase;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  font-size: 1em;
+  letter-spacing: 0.3em;
+}
+
+#keyboard {
+  display: flex;
+  flex-direction: column;
+  //background-color: $orange;
+  border-radius: 10px;
+  padding: 20px 10px 30px;
+}
+
+.ulKeyboard {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  //background-color: $text-color;
+  border-radius: 10px;
+
+  li {
+    height: 3em;
+    width: 3em;
+    color: rgba(0, 0, 0, 0.7);
+    border-radius: 0.4em;
+    line-height: 3em;
+    letter-spacing: 1px;
+    margin: 0.4em;
+    transition: 0.3s;
+    text-align: center;
+    font-size: 1em;
+  }
+}
+.benefits{
+  margin-bottom: 200px;
+}
+.benefits>.row>.col>h2{
+  font-size: 72px;
+    margin-bottom: 30px;
+    margin-top: 100px;
+}
+.creators>.row>.col>h2{
+  font-size: 72px;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+.benefits_grid_item{
+  max-width: 280px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.benefits_grid_item>h3{
+  font-size: 24px;
+  margin-top: 24px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.benefits_grid{
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-around;
+}
+.hotkeys_link{
+  color: #F66E0D;
+}
+.icons{
+  width: 50px;
+  height: 50px;
+  color: black;
+}
+.creator_img{
+  background-image: url(/img/creator.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y:-20px ;
+  margin-left: 30px;
+  border-radius: 50%;
+  width: 225px;
+  height: 225px;
+}
+.creators_main{
+  display: flex;
+  margin-bottom: 70px;
+  align-items: center;
+}
+.creators_main>p{
+  width: 600px;
+  text-align: center;
+  margin-left: 50px;
+  font-size: 24px;
+}
+
+#tab {
+  width: 5em;
+}
+
+#caps {
+  width: 6em;
+}
+
+#left-shift {
+  width: 8em;
+}
+
+#enter {
+  width: 6em;
+}
+
+#right-shift {
+  width: 8em;
+}
+
+#back {
+  width: 5em;
+}
+
+.pinky {
+  background-color: crimson;
+  border: 2px solid crimson;
+}
+
+.pinky.selected {
+  color: crimson;
+}
+
+.ring {
+  background-color: coral;
+  border: 2px solid coral;
+}
+
+.ring.selected {
+  color: coral;
+}
+
+.middle {
+  background-color: darkorange;
+  border: 2px solid darkorange;
+}
+
+.middle.selected {
+  color: darkorange;
+}
+
+.pointer1st {
+  background-color: gold;
+  border: 2px solid gold;
+}
+
+.pointer1st.selected {
+  color: gold;
+}
+
+.pointer2nd {
+  background-color: khaki;
+  border: 2px solid khaki;
+}
+
+.pointer2nd.selected {
+  color: khaki;
+}
+
+.fill-out-key {
+  background-color: slategrey;
+  border: 2px solid slategrey;
+}
+
+.selected {
+  background-color: transparent;
+  animation: vibrate-1 0.8s linear infinite both;
+}
+
+.hit {
+  animation: hit 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@keyframes hit {
+  0% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes vibrate-1 {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(0, -2px);
+  }
+  80% {
+    transform: translate(0, 2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+//-----------------------------------
+//-----------------------------------
+//CIRCLE
+//-----------------------------------
+//-----------------------------------
+
+.benefits {
+  position: relative;
+}
+
+#circle {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+}
+
+#circle text {
+  font-family: "Arial";
+  font-size: 17.7px;
+  font-weight: 600;
+}
+
+#circle svg {
+  animation-name: rotate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
+
+//-----------------------------------
+//-----------------------------------
+//POP UP
+//-----------------------------------
+//-----------------------------------
+.keyboardRow > div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.keyboardImg{
+  background-color: #181818;
+  z-index: 1000;
+}
+
+.keyboardWrapper{
+  position:relative;
+  //height: 333px;
+  //width: 844px;
+}
+.keyboardWrapper .asd{
+  position:absolute;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+.transparent {
+  opacity:0;
+}
+//.keyboardImg {
+//  padding-bottom: 50px;
+//  transition: 2s;
+//}
+
+//.keyboardImg:hover {
+//  outline: 5px solid $orange;
+//  border-radius: 10px;
+//  transition: outline 2s ease-in;
+//}
+
+.unactive {
+  display: none;
+}
+
+#keyboard {
+  display: none;
+  padding-bottom: 100px;
+}
+
+//-----------------------------------
+//-----------------------------------
+//CURSOR
+//-----------------------------------
+//-----------------------------------
+
+.cursor {
+  pointer-events: none;
+
+  &__ball {
+    position: fixed;
+    top: 0;
+    left: 0;
+    mix-blend-mode: difference;
+    z-index: 1000;
+
+    circle {
+      fill: #f7f8fa;
+    }
+  }
+}
+
+
+
+

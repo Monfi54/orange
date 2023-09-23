@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>orangetype</title>
+    <link rel="shortcut icon" href="/favicon_io/favicon.ico" type="image/ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/modal.css">
+  </head>
+  <body>
+    <div class="cursor">
+      <div class="cursor__ball cursor__ball--big">
+        <svg height="30" width="30">
+          <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+        </svg>
+      </div>
+
+      <div class="cursor__ball cursor__ball--small">
+        <svg height="10" width="10">
+          <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+        </svg>
+      </div>
+    </div>
+    <section class="header container">
+      <div class="row">
+        <div class="logoBox col">
+          <a href="#"><img src="img/logo.svg" alt="logo" /></a>
+          <a href="#">orangetype</a>
+        </div>
+        <div class="col">
+          <ul class="navbar-nav d-flex flex-row justify-content-end">
+            <li class="nav-item">
+              <a href="/index.html" class="nav1 nav-link hoverable">К тренажеру</a>
+            </li>
+            <li class="nav-item">
+              <a href="#benefits" class="nav-link hoverable">Преимущества</a>
+            </li>
+            <li class="nav-item">
+              <a href="#creators" class="nav-link hoverable">Создатель</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="main">
+      <div class="container">
+        <div class="row mainHeader">
+          <div class="col headerCol">
+            <div class="col">
+              <pre id="headerTypingText"></pre>
+            </div>
+            <div class="col clickBtn hoverable">
+              <a
+                href="#keyboardSection"
+                class="btn animate__animated animate__fadeIn"
+                >Кликай!</a
+              >
+            </div>
+          </div>
+          <div class="man col d-flex justify-content-end">
+            <img
+              src="/landing/img/man1.svg"
+              class="animate__animated animate__backInUp"
+              alt="man"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="benefits" class="benefits container">
+      <!--    <div id="circle">-->
+      <!--        <svg x="0px" y="0px" width="500px" height="300px" viewBox="0 0 300 300" xml:space="preserve">-->
+      <!--                    <defs>-->
+      <!--                        <path id="circlePath" d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "></path>-->
+      <!--                    </defs>-->
+      <!--            <circle cx="150" cy="100" r="75" fill="none"></circle>-->
+      <!--            <g>-->
+      <!--                        <use xlink:href="#circlePath" fill="none"></use>-->
+      <!--                <text fill="#000">-->
+      <!--                            <textPath xlink:href="#circlePath">orangetype | fast typing | orange & type ===</textPath>-->
+      <!--                        </text>-->
+      <!--                    </g>-->
+      <!--                </svg>-->
+      <!--    </div>-->
+
+      <div class="row">
+        <div class="col">
+          <h2>Наши преимущества</h2>
+        </div>
+        <div class="benefits_grid">
+          <div class="benefits_grid_item">
+            <img class="icons" src="/img/supplies.svg" alt="" />
+            <h3>Простой и удобный дизайн</h3>
+            <p>Мы постарались убрать всё ненужное, оставив самое главное.</p>
+          </div>
+          <div class="benefits_grid_item">
+            <img class="icons" src="/img/setting.svg" alt="" />
+            <h3>Горячие клавиши и команды</h3>
+            <p>
+              Вы можете посмотреть подробнее, нажав <a id="hotkeys_link" class="hotkeys_link butn butn-open">сюда</a>.
+              <section class="modal hidden">
+                <div>
+                  <h3>Горячие клавиши и команды тренажера</h3>
+                  <p>
+                    1. Переключение языка – введите в поле название языка - (english/russian) и зажмите ALT + L.
+                  </p>
+                  <p>
+                    2. Введите wordcount, time в поле для ввода текста и зажмите ALT + M для смены режима.
+                  </p>
+                  <p>
+                    3. Зажмите SHIFT и нажмите на кнопку перезагрузки чтобы сбросить ошибки и ввод, начав тестирование с тем же сгенерированным текстом.
+                  </p>
+                </div>
+                <button class="animate__animated animate__fadeIn butn-close">Понятно</button>
+              </section>
+              <div class="overlay hidden"></div>
+            </p>
+          </div>
+          <div class="benefits_grid_item">
+            <img class="icons" src="/img/adblock.svg" alt="" />
+            <h3>Никакой рекламы</h3>
+            <p>Мы ценим ваше личное пространство.</p>
+          </div>
+          <div class="benefits_grid_item">
+            <img class="icons" src="/img/infinity.svg" alt="" />
+            <h3>Обширный функционал</h3>
+            <p>
+              У нас присутствует смена языка, а также выбор интересуещего вас
+              режима тренировки.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="keyboardSection">
+      <div class="container">
+        <div class="row">
+          <div class="col keyboardParagraph">
+            <h1 class="keyboardTitle" id="keyboardTitle">
+              Расположите руки согласно картинке
+            </h1>
+            <a id="KeyboardP" href="https://type.sadrozzy.tech" target="_blank"
+              >Как будете готовы кликайте на картинку</a
+            >
+          </div>
+        </div>
+        <div class="row">
+          <div class="col"></div>
+          <div class="col">
+            <div class="keyboardImg">
+              <a href="#keyboardSection"
+                ><img src="img/keyboard.svg" class="keys" alt="keyboard"
+              /></a>
+            </div>
+            <div id="keyboard">
+              <ul class="ulKeyboard">
+                <li class="pinky" id="esc">ESC</li>
+                <li class="pinky" id="1">1</li>
+                <li class="ring" id="2">2</li>
+                <li class="middle" id="3">3</li>
+                <li class="pointer1st" id="4">4</li>
+                <li class="pointer2nd" id="5">5</li>
+                <li class="pointer2nd" id="6">6</li>
+                <li class="pointer1st" id="7">7</li>
+                <li class="middle" id="8">8</li>
+                <li class="ring" id="9">9</li>
+                <li class="pinky" id="10">0</li>
+                <li class="pinky">-</li>
+                <li class="pinky">+</li>
+                <li class="pinky" id="back">BACK</li>
+              </ul>
+              <ul class="ulKeyboard">
+                <li class="pinky" id="tab">TAB</li>
+                <li class="pinky" id="Q">Q</li>
+                <li class="ring" id="W">W</li>
+                <li class="middle" id="E">E</li>
+                <li class="pointer1st" id="R">R</li>
+                <li class="pointer2nd" id="T">T</li>
+                <li class="pointer2nd" id="Y">Y</li>
+                <li class="pointer1st" id="U">U</li>
+                <li class="middle" id="I">I</li>
+                <li class="ring" id="O">O</li>
+                <li class="pinky" id="P">P</li>
+                <li class="pinky">[</li>
+                <li class="pinky">]</li>
+                <li class="pinky">\</li>
+              </ul>
+              <ul class="ulKeyboard">
+                <li class="pinky" id="caps">CAPS</li>
+                <li class="pinky" id="A">A</li>
+                <li class="ring" id="S">S</li>
+                <li class="middle" id="D">D</li>
+                <li class="pointer1st" id="F">F</li>
+                <li class="pointer2nd" id="G">G</li>
+                <li class="pointer2nd" id="H">H</li>
+                <li class="pointer1st" id="J">J</li>
+                <li class="middle" id="K">K</li>
+                <li class="ring" id="L">L</li>
+                <li class="pinky">:</li>
+                <li class="pinky">''</li>
+                <li class="pinky" id="enter">ENTER</li>
+              </ul>
+              <ul class="ulKeyboard">
+                <li class="pinky" id="left-shift">SHIFT</li>
+                <li class="pinky" id="Z">Z</li>
+                <li class="ring" id="X">X</li>
+                <li class="middle" id="C">C</li>
+                <li class="pointer1st" id="V">V</li>
+                <li class="pointer2nd" id="B">B</li>
+                <li class="pointer2nd" id="N">N</li>
+                <li class="pointer1st" id="M">M</li>
+                <li class="middle">,</li>
+                <li class="ring">.</li>
+                <li class="pinky">;</li>
+                <li class="pinky" id="right-shift">SHIFT</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col"></div>
+        </div>
+      </div>
+    </section>
+    <section id="creators" class="creators container">
+      <div class="row">
+        <div class="col">
+          <h2>Создатель</h2>
+        </div>
+        <div class="creators_main">
+          <div class="creator_img"></div>
+          <p>Данный сайт создал учащийся 11 "Б" класса Гомельского городского лицея №1 г. Гомеля Распопов Александр Витальевич</p>
+        </div>
+        <p>© 2023 orangetype. Все права защищены.</p>
+    </section>
+
+    <script src="js/TweenMax.js"></script>
+    <script src="js/jQuery.js"></script>
+    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>-->
+    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>-->
+    <script src="js/main.js"></script>
+    <script src="modal.js"></script>
+  </body>
+</html>

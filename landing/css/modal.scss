@@ -1,0 +1,56 @@
+$orange: #F66E0D;
+.modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    width: 600px;
+    padding: 40px;
+    min-height: 150px;
+    position: absolute;
+    top: 20%;
+    left:27%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    z-index: 2;
+    animation: 0.2s fadeIn;
+  }
+  .modal>div>h3{
+    margin-bottom: 30px;
+  }
+  .hidden {
+    animation: 10s fadeOut;
+    display: none;
+  }
+  .butn-close{
+    margin-top: 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 20px 70px 20px 70px;
+    animation: 2s fadeIn;
+    text-align: center;
+    border: none;
+  }
+  
+.modal p {
+    margin-top: 50px;
+    font-size: 0.9rem;
+    color: #5c5c5c;
+    margin: 0.4rem 0 0.2rem;
+  }
+  .overlay {animation: 0.2s fadeIn;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    z-index: 0;
+  }
+
+  
