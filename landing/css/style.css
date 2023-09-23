@@ -222,7 +222,7 @@ body a:hover, html a:hover {
 }
 
 .creator_img {
-  background-image: url(/img/creator.jpg);
+  background-image: url(../../img/creator.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: -20px;
